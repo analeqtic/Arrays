@@ -1,0 +1,30 @@
+using System;
+
+namespace Program
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] videogames = new string[4];
+
+            Console.WriteLine("Type in four games: ");
+
+            for (int i = 0; i < videogames.Length; i++)
+            {
+                videogames[i] = Console.ReadLine();
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("Here they are alphabetically: ");
+
+            Array.Sort(videogames);
+
+            for (int i = 0; i < videogames.Length; i++)
+            {
+                Console.WriteLine(videogames[i]);
+            }
+            Console.ReadKey();
+        }
+    }
+}
